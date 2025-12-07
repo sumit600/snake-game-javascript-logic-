@@ -35,9 +35,13 @@ body{
     height: 80%;
     margin:  var(--margin-xl);
     display: grid;
-    grid-template-columns: repeat(30px);
-    grid-template-rows: repeat(30px);
+    grid-template-columns: repeat(auto-fill,minmax(30px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(30px,1fr));
     border: 2px solid gray;
 }
 
-
+.box{
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+}
