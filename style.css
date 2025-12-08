@@ -35,13 +35,16 @@ body{
     height: 80%;
     margin:  var(--margin-xl);
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(30px,1fr));
-    grid-template-rows: repeat(auto-fill,minmax(30px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(50px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(50px,1fr));
     border: 2px solid gray;
 }
 
 .box{
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     border: 1px solid gray;
+}
+.fill{
+    background-color: red;
 }
