@@ -47,6 +47,11 @@ setInterval(function(){
     }else if(direction === "up"){
         head = {x:snake[0].x-1,y:snake[0].y}
     }
+    if(head.x<0 || head.x>=rows || head.y<0 || head.y>= cols){
+        alert("game over")
+    }
+
+
     snake.forEach(elem => {
     blocks[`${elem.x}-${elem.y}`].classList.remove('fill')
     })
@@ -56,10 +61,6 @@ setInterval(function(){
 },300);
 
 
-// ArrowDown
-// script.js:60 
-// script.js:60 
-// script.js:60 ArrowLeft
 addEventListener("keydown",function(event){
 if(event.key == "ArrowDown"){
     direction = "down"
